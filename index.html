@@ -11,25 +11,32 @@
 <body>
     <div class="container">
        
-        <form id="form" name="" action="#!" class="form">
+        <form name="form" id="form" method="get" action="#!" class="form">
             <div class="logo" >
                 <img src="img/blueLogo.png" alt="MyHelperNg Logo">
             </div>
             
             <div class="form-control">
-                <input type="text" id="email" placeholder="E-mail Address">
+                <input type="text" id="email" name="email" placeholder="E-mail Address">
                 <small>Error Message</small>
             </div>
-    
             <div class="form-control">
-                <input type="password" id="password" placeholder="***********">
+                <select id="role" name="role">
+                    <option value="">Select Role</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="ngo">NGO</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" name="password" placeholder="***********">
                 <small>Error Message</small>
             </div>
             <div class="checkbox">
                 <input type="checkbox" id="remember" name="password" value="">
                 <label for="Remember"> Remember Me</label> <span><a class="forgot" href="#">Forgot Password?</a></span><br><br>
             </div>
-            <button>LOG IN</button>
+                <button type="submit" >LOG IN</button>
             <div class="iconlogin">
                 <p class="ptext"> Or Sign up with</p>
             </div>
@@ -42,13 +49,16 @@
                 <p > Don't have an account? <a class="reg" href="#!"> Register</a></p>
             </div>
         </form>
+
+        <footer>
+            <p>
+                Created with <i class="fa fa-heart"></i> click here for
+                <a target="_blank" href="recoverypassword/recoverypassword.html">Recovery Password</a> and
+                
+                <a target="_blank" href="resetpassword/resetpassword.html">Reset Password</a> Page.
+            </p>
+        </footer>
     </div>
-    <footer>
-    <p>
-        Created with <i class="fa fa-heart"></i> by RACHID click here for
-        <a target="_blank" href="recoverypassword/recoverypassword.html">Recovery Password</a> and
-        
-        <a target="_blank" href="resetpassword/resetpassword.html">Reset Password</a> Page.
     <script src="index.js"></script>
 </body>
 </html>

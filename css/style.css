@@ -12,7 +12,7 @@
 body{
 
     /* background-color:#E5E5E5;; */
-    background-image: linear-gradient(to right bottom, rgba(229, 229, 229, 0.529), rgba(229, 229, 229, 0.638)), url(img/background.png);
+    background-image: linear-gradient(to right bottom, rgba(229, 229, 229, 0.529), rgba(229, 229, 229, 0.638)), url(../img/background.png);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -45,7 +45,7 @@ body{
     position: relative;
 }
 
-.form-control input
+.form-control input 
 {
     border: 2px solid #f0f0f0;
     border-radius: 4px;
@@ -54,18 +54,33 @@ body{
     padding: 10px;
     font-size: 14px;   
 }
+.form-control select 
+{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;  
+    color: #757575; 
+}
 
 .form-control input:focus{
     outline: 0;
     border-color: #777;
 
 }
+.form-control select:focus{
+    outline: 0;
+    border-color: #777;
 
-.form-control.success input {
+}
+
+.form-control.success input,select {
     border-color: var(--succes-color);
 }
 
-.form-control.error input {
+.form-control.error input,select {
     border-color: var(--error-color);    
 }
 
